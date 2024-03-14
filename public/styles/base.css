@@ -94,8 +94,38 @@ a {
     border-radius: var(--border-radius-small);
 }
 
+.btn-alt {
+    background-color: transparent;
+    color: var(--color-primary-500);
+}
+
 .btn:hover,
 .btn:active {
     background-color: var(--color-primary-700);
     border-color: var(--color-primary-700);
+}
+
+.btn-alt:hover,
+.btn-alt:active {
+    background-color: var(--color-primary-500-bg);
+}
+
+form hr {
+    border-color: var(--color-primary-200);
+    margin: var(--space-4);
+}
+
+form label {
+    color: var(--color-gray-100);
+    display: block;
+    margin-bottom: var(--space-2);
+}
+
+form input,
+form textarea {
+    font: inherit;
+    padding: var(--space-2);
+    border-radius: var(--border-radius-small);
+    border: none;
+    width: 90%;
 }

@@ -1,0 +1,45 @@
+<%- include('../../shared/head', { pageTitle: 'New Product' }) %>
+<link rel="stylesheet" href="styles/form.css">
+
+</head>
+<body>
+	<%- include('../../shared/header') %>
+	<main>
+		<h1>Add New Product</h1>
+
+        <form action="">
+            <p>
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </p>
+
+            <p>
+                <label for="image">Image</label>
+                <input type="file" name="image" id="image" accept="image/png/jpeg/jpd/gif">
+            </p>
+
+            <p>
+                <label for="summary">Summary</label>
+                <input type="text" id="summary" name="summary" required maxlength="258">
+            </p>
+
+            <p>
+                <label for="price">Price</label>
+                <input type="number" name="price" id="price" required min="10.0" step="1">
+            </p>
+
+            <p>
+                <label for="description">Description</label>
+                <textarea name="description" id="description" required rows="7"></textarea>
+            </p>
+
+            <p>
+                <button type="reset" class="btn btn-alt">Reset</button>
+                <button type="submit"  class="btn">Save</button>
+            </p>
+        </form>
+        
+	</main>
+
+	<%- include('../../shared/footer') %>
+
