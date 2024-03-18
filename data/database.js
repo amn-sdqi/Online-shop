@@ -1,24 +1,23 @@
-const mongodb = require("mongodb");
-
+const mongodb = require('mongodb');
 
 const MongoClient = mongodb.MongoClient;
 
 let database;
 
-async function connect_database() {
-	const client = await MongoClient.connect("mongodb://127.0.0.1");
-	database = client.db("online-shop");
+async function connectToDatabase() {
+  const client = await MongoClient.connect('mongodb://127.0.0.1:27017');
+  database = client.db('online-shop');
 }
 
 function getDb() {
-	if (!database) {
-		throw new Error("You must connect to the Database");
-	}
+  if (!database) {
+    throw new Error('You must connect first!');
+  }
 
-	return database;
+  return database;
 }
 
 module.exports = {
-	connect_database: connect_database,
-	getDb: getDb,
+  connectToDatabase: connectToDatabase,
+  getDb: getDb
 };
