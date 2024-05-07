@@ -1,5 +1,5 @@
 const bcrypt = require("bcryptjs");
-
+const mongoDb = require("mongodb");
 const db = require("../data/database");
 
 class User {
@@ -12,6 +12,15 @@ class User {
 			postalCode: postal,
 			city: city,
 		};
+	}
+
+	static findById(userId) {
+		const uid = new mongoDb.ObjectId(userId);
+
+		return db
+			.getDb()
+			.collection("users")
+			.findOne({ _id: uid }, { password: 0 });
 	}
 
 	getUserWithSameEmail() {
