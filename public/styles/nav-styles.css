@@ -36,6 +36,7 @@ main {
 #mobile-menu .nav-items button {
     font-size: 1.75rem;
     color: var(--color-primary-100);
+    
 }
 
 
@@ -53,6 +54,7 @@ main {
     height: 2.25rem;
     background-color: transparent;
     padding: none;
+    
 }
 
 #main-header nav {
@@ -95,6 +97,7 @@ main {
     background-color: transparent;
     padding: var(--space-2) var(--space-4);
     border-radius: var(--border-radius-small);
+    
 
 }
 
@@ -115,6 +118,7 @@ main {
     .nav-items button {
         color: var(--color-primary-500);
         border: 1px solid var(--color-primary-500);
+        
     }
 
 
@@ -134,6 +138,29 @@ main {
     .nav-items a {
         padding: var(--space-2) var(--space-4);
         border-radius: var(--border-radius-small);
+        height: 50px;
+            margin: 5px;
+            width: 120px;
+            background: #333;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            cursor: pointer;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-family: Consolas, Courier New, monospace;
+            border: solid #404c5d 1px;
+            font-size: 16px;
+            color: rgb(161, 161, 161);
+            -webkit-transition: 500ms;
+            transition: 500ms;
+            border-radius: 5px;
+            background: linear-gradient(145deg, #2e2d2d, #212121);
+            -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+                inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+            box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+                inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
     }
 
     .nav-items a:hover,
